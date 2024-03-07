@@ -37,7 +37,7 @@ public class FileManagerApplication {
 								
 			}
 			
-		}, 2, 1 * 60 * 1000); // 02 min
+		}, 2, 1 * 60 * 1000); // 01 min
 		
 		
 	}

@@ -69,12 +69,12 @@ public class CustomMethod {
 				 */
 
 				Path origemPath = Paths.get(origem.toString() + "/" + nomeArquivo);
-				Path destinoPath = Paths.get(destino.toString() + "/" + nomeArquivo + ".old");
+				Path destinoPath = Paths.get(destino.toString() + "/" + nomeArquivo);
 				Files.copy(origemPath, destinoPath, StandardCopyOption.REPLACE_EXISTING);
 			}
 
 		} catch (Exception e) {
-			System.out.println("[ERROR] Metodo <copiarArquivos> Stacktrace --> " + e.getStackTrace());
+			System.out.println("[ERROR] Metodo <copiarArquivos> Stacktrace --> " + e.getStackTrace() + " Message-- > " + e.getMessage());
 		}
 
 	}
@@ -91,7 +91,7 @@ public class CustomMethod {
 				Files.move(origemPath, destinoPath, StandardCopyOption.REPLACE_EXISTING);
 			}
 		} catch (Exception e) {
-			System.out.println("[ERROR-EXCEPTION] Metodo <moverArquivos> Stacktrace --> " + e.getStackTrace());
+			System.out.println("[ERROR-EXCEPTION] Metodo <moverArquivos> Stacktrace --> " + e.getStackTrace() + " Message-- > " + e.getMessage());
 		}
 
 	}
